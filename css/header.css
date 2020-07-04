@@ -1,0 +1,33 @@
+
+    footer {
+      position: sticky;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 2% 5%;
+      background: #424242;
+      color: #ffebee;
+
+      text-align: center;
+    }
+
+    .footer-icon {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto auto auto auto;
+      font-size: 18px;
+    }
+
+    .footer-icon-item {
+      text-align: center;
+      color: green;
+    }
+
+    .footer-icon-item:hover {
+      color: purple;
+      background-color: blue;
+    }
+
+    #footer-image .logo {
+      height: 35px;
+      color: green;
+    }
