@@ -1,22 +1,30 @@
-.aboutcontainer{
+/* .aboutcontainer{
   display: flex;
   width: 100%;
  
+} */
+/* .aboutbox {
+  width: 80%;
 }
-.aboutbox{
-  width:80%;
-  
-}
-.aboutbox1{
+.aboutbox1 {
   width: 20%;
+} */
+.abouttext {
+  font-size: 1.2em;
+  font-weight: 300;
 }
-.abouttext{
-  font-size:20px;
-  font-weight:300 ;}
-#rotating-text2{font-size: 40px;}
 
-.hero_resume_link{
-  color:green;
+#aboutdetail {
+  font-size: 1em;
+  font-weight: bold;
+  opacity: 0.8;
+}
+#rotating-text2 {
+  font-size: 40px;
+}
+
+.hero_resume_link {
+  color: green;
   font-size: 20px;
   font-weight: bold;
   font-style: italic;
@@ -24,54 +32,56 @@
   transition: 5s ease;
   position: relative;
 }
-.hero_resume_link figure{
+.hero_resume_link figure {
   position: relative;
-  color:yellowgreen;
+  color: yellowgreen;
   font-size: 20px;
-  width:40px;
+  width: 40px;
   border-radius: 100%;
-  height:50px;
-  padding:1px;
+  height: 50px;
+  padding: 1px;
   margin-right: 8px;
-  display:inline-block;
-  background-color:rgba(200,200, 200, 0.5 );
+  display: inline-block;
+  background-color: rgba(200, 200, 200, 0.5);
 }
-.hero_resume_link figure i{
+.hero_resume_link figure i {
   position: relative;
   font-size: 30px;
-  margin-left:auto;
+  margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
-  
 }
-.hero_resume_link:hover{
-  color:blue;
+.hero_resume_link:hover {
+  color: blue;
 }
-@media(max-width: 600px) {
-  .aboutcontainer{
+@media (max-width: 600px) {
+  .aboutcontainer {
     display: flex;
     flex-direction: column;
   }
-  .aboutbox{
+  .aboutbox {
     width: 100%;
   }
-  .hero_resume_link{
+  .hero_resume_link {
     font-size: 10px;
   }
- 
-  .card-text{
+
+  .card-text {
     font-size: 10px;
   }
- .abouttext{
+  /* .abouttext {
+    font-size: 0.5em;
+  } */
+  /* #aboutdetail {
     font-size: 10px;
-  }
-  .aboutbox1{
+  } */
+  .aboutbox1 {
     width: 100%;
   }
-  #rotating-text2{
+  #rotating-text2 {
     font-size: 15px;
   }
-  .aboutbox1 img{
-    width:40%;
+  .aboutbox1 img {
+    width: 40%;
   }
 }
