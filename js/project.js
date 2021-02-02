@@ -4,19 +4,21 @@ window.onbeforeunload = function () {
 };
 
 //Mobile Nav Screen
-$('a[href*="#"]')
-    // Remove links that don't actually link to anything
+$('.nav-item a[href*="#"]')
     .not('[href="#"]')
-    .not('[href="#0"]').on('click', function (event) {
+    .not('[href="#0"]').on('click touchstart', function (event) {
+        console.log("s");
         // On-page links
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
             &&
             location.hostname == this.hostname
         ) {
+            console.log("p");
             // Figure out element to scroll to
-            var target = $(this.get(1).getAttribute('href'));
+            var target = $(this.getAttribute('href'));
             target = target.length ? target : $('[name=' + target.slice(1) + ']');
+            console.log(target)
             // Does a scroll target exist?
             if (target.length) {
                 // Only prevent default if animation is actually gonna happen
