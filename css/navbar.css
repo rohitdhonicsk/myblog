@@ -1,0 +1,24 @@
+.navbar-collapse .navbar-nav > .active {
+  background: #d65c14;
+}
+
+.navbar-collapse .navbar-nav .nav-item:not(.active) a:hover {
+  background-color: rgb(201, 179, 152);
+  border-radius: 40%;
+  color: yellow;
+}
+
+.navbar-collapse .navbar-nav .nav-item a {
+  color: rgba(201, 220, 235, 0.8);
+}
+
+@media (max-width: 700px) {
+  .dropdown:hover {
+    display: none;
+  }
+
+  .navbar-collapse .navbar-nav .nav-item a {
+    pointer-events: none;
+    margin: auto;
+  }
+}

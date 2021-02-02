@@ -1,18 +1,67 @@
-/* .aboutcontainer{
+/* Card */
+
+.cardcontainer {
   display: flex;
+  flex-direction: column;
   width: 100%;
- 
-} */
-/* .aboutbox {
-  width: 80%;
 }
-.aboutbox1 {
-  width: 20%;
-} */
+.card {
+  width: 70%;
+  margin: 1em 0;
+
+  border-radius: 20%;
+  border: 0.1em solid rgb(255, 89, 89);
+  box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(2, 10, 2, 0.8);
+}
+
+.cardbody p {
+  display: inline;
+  color: red;
+}
+.cardbody {
+  width: 100%;
+}
+#cardmain {
+  padding: 0 3rem;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+  }
+  .cardcontainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 35%;
+    margin: 1em 1em;
+    border-radius: 15%;
+  }
+  .cardbody {
+    width: 55%;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  #cardmain {
+    padding-left: 1px !important;
+    padding-right: 2px;
+  }
+  .cardbody p {
+    color: blue;
+    width: 50%;
+    display: inline;
+    /* flex-flow: column; */
+  }
+}
+
+/* ABOUT DETAIL */
 .abouttext {
   font-size: 1.2em;
   font-weight: 300;
 }
+/* .card {
+  width: 80%;
+} */
 
 #aboutdetail {
   font-size: 1em;
@@ -23,6 +72,39 @@
   font-size: 40px;
 }
 
+@media (max-width: 600px) {
+  .aboutbox {
+    width: 100%;
+  }
+
+  .card-text {
+    font-size: 10em;
+  }
+  .hero_resume_link {
+    font-size: 10px;
+  }
+
+  .card-text {
+    font-size: 10px;
+  }
+  /* .abouttext {
+    font-size: 0.5em;
+  } */
+  /* #aboutdetail {
+    font-size: 10px;
+  } */
+  .aboutbox1 {
+    width: 100%;
+  }
+  #rotating-text2 {
+    font-size: 15px;
+  }
+  .aboutbox1 img {
+    width: 40%;
+  }
+}
+
+/* Resume Hand Button */
 .hero_resume_link {
   color: green;
   font-size: 20px;
@@ -51,37 +133,7 @@
   margin-right: auto;
   vertical-align: middle;
 }
+
 .hero_resume_link:hover {
   color: blue;
-}
-@media (max-width: 600px) {
-  .aboutcontainer {
-    display: flex;
-    flex-direction: column;
-  }
-  .aboutbox {
-    width: 100%;
-  }
-  .hero_resume_link {
-    font-size: 10px;
-  }
-
-  .card-text {
-    font-size: 10px;
-  }
-  /* .abouttext {
-    font-size: 0.5em;
-  } */
-  /* #aboutdetail {
-    font-size: 10px;
-  } */
-  .aboutbox1 {
-    width: 100%;
-  }
-  #rotating-text2 {
-    font-size: 15px;
-  }
-  .aboutbox1 img {
-    width: 40%;
-  }
 }

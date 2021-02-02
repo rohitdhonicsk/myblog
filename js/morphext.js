@@ -47,6 +47,7 @@
             this.index = -1;
             this.animate();
             this.start();
+
         },
         animate: function () {
             this.index = ++this.index % this.phrases.length;
@@ -60,6 +61,7 @@
             var $that = this;
             this._interval = setInterval(function () {
                 $that.animate();
+
             }, this.settings.speed);
         },
         stop: function () {

@@ -1,0 +1,84 @@
+#EduIcon {
+  padding-top: 20px;
+}
+
+.education-head {
+  display: flex;
+  flex-direction: row;
+}
+
+.education-text-school {
+  color: chocolate;
+  display: inline;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.education-roundedimg {
+  object-fit: cover;
+  margin-right: 2rem;
+  width: 8rem;
+  height: 8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 30%;
+}
+
+.education-text-subHeader {
+  color: rgb(7, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: normal;
+}
+
+.education-text-duration {
+  color: #811212;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0px;
+  padding-top: 0.5rem;
+}
+
+.education-text-bullets > ul {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+  .education-roundedimg {
+    width: 6rem;
+    height: 6rem;
+  }
+  #EduIcon {
+    width: 30%;
+  }
+  .education-text-school {
+    text-align: center;
+    font-size: 17px;
+  }
+  .education-card-right {
+    max-width: 100%;
+    width: 70%;
+  }
+  .education-text-details {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .education-card-border {
+    width: 100%;
+  }
+  .education-roundedimg {
+    margin-top: 2px;
+    margin-bottom: 0.1rem;
+    margin-right: 0;
+  }
+  .education-text-bullets > ul {
+    max-width: 80%;
+  }
+}

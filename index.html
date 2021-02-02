@@ -26,32 +26,15 @@
     <link rel="stylesheet" href="./css/education.css">
     <link rel="stylesheet" href="./css/experience.css">
     <link rel="stylesheet" href="./css/skill.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <style>
-        .navbar-collapse .navbar-nav>.active {
 
-            background: #d65c14;
-        }
-
-        .navbar-collapse .navbar-nav .nav-item:not(.active) a:hover {
-            background-color: rgb(201, 179, 152);
-            border-radius: 40%;
-            color: yellow
-        }
-
-        @media (max-width: 700px) {
-            .dropdown:hover {
-                display: none;
-            }
-
-            .navbar-collapse .navbar-nav .nav-item a:hover {
-                display: none;
-            }
-        }
     </style>
 </head>
 
 <body style="background-image: url('./img/4.jpg');background-repeat:
         no-repeat;background-attachment: fixed;background-size: cover;">
+
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
 
@@ -83,152 +66,301 @@
 
 
     </nav>
-
-    <section class="Skill pt-125 pb-200 mx-15" style=" background: rgba(65, 42, 2, 0.932); ">
-        <div class=" container" style=" background: rgba(255, 255, 255, 0.932); ">
-            <div class=" card mb-3" style="max-width: 600px;">
-                <div class="row no-gutters">
-                    <div class="col-md-3">
-                        <img src="my.jpg" class="card-img" alt="...">x
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h1 style="background-color: blanchedalmond;">
+        <span class="txt-type" data-wait="3000" data-words='["Welcome To My Portfolio","Have A Great Day"]'><span
+                class=" txt"> </span></span>
+    </h1>
 
     <!--About-->
-    <section class="About" style=" background: rgba(244, 169, 39, 0.932); ">
-        <div id="About" class="container" style="background-color: white;">
+    <section id="About" class="my-3 py-2 " style=" background: rgba(244, 169, 39, 0.932); ">
+        <div class="container" style="background-color: white;">
             <h2 style="background-color: yellow;">About</h2>
+
             <div class="row">
-                <div class="aboutcontainer">
-                    <div class="aboutbox1 col-md-2">
+                <div id="cardmain" class="col-md-3">
+                    <div class="cardcontainer">
                         <div class="card">
-                            <img class="card-img-top" src="my.jpg" alt="Card image">
+                            <img class="card-img-top" style="border-radius: 22%;height: 100%;" src="my.jpg"
+                                alt="Card image">
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Rohit Kumar Gupta</h4>
-                            <p class="card-text">Intern@GFG@TECHKRITI@CODINGBLOCK@ISP18|CSE|IEM,Kolkata</p>
-                            <a style="display: inline;" href="https://www.linkedin.com/in/rohit-kumar-gupta-15655b183/"
-                                class="btn btn-primary stretched-link">See
+                        <div class="cardbody">
+                            <h5 class="my-1">Rohit Kumar Gupta</h5>
+                            <!-- <p>CSE_2ndYear_CompetitveCoder_Webdeveloper_MachineLearning_Deeplearning_TechincalContentWrite.
+                            </p> -->
+                            <div class="my-1">
+                                <p id="aboutdetail">
+                                    3⭐ Codechef,5⭐IN C & PY HackerRank</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/rohit-kumar-gupta-15655b183/"
+                                class="btn btn-primary stretched-link my-1">See
                                 Linkedin Profile</a>
                         </div>
                     </div>
-                    <div class="aboutbox mx-4 col-md-10 ">
-                        <p class="abouttext" style="display: inline;">
-                            I AM ROHIT,COMPUTER-SCIENCE STUDENT,IEM KOLKATA
-                        </p>
-                        <a id="rotating-text2" href="#"
-                            class="aboutext">CSE_2ndYear_CompetitveCoder_Webdeveloper_MachineLearning_Deeplearning_TechincalContentWriter</a>
-                        <br>
-                        <a href="https://drive.google.com/file/d/1ylMhK0jlejVaF-nAawzbLiPnE5JtQN0K/view?usp=sharing"
-                            class="hero_resume_link">
-                            <figure>
-                                <i class="fas fa-hand-point-right animated infinite
+                </div>
+                <div class="col-md-9 ">
+                    <p class="abouttext" style="display: inline;">
+                        I AM ROHIT,COMPUTER-SCIENCE STUDENT,IEM KOLKATA
+                    </p>
+                    <a id="rotating-text2" href="#"
+                        class="aboutext">CSE_3rdYear_CompetitveCoder_Webdeveloper_MachineLearning_Deeplearning_TechincalContentWriter</a>
+                    <br>
+                    <a href="https://drive.google.com/file/d/1ylMhK0jlejVaF-nAawzbLiPnE5JtQN0K/view?usp=sharing"
+                        class="hero_resume_link">
+                        <figure>
+                            <i class="fas fa-hand-point-right animated infinite
                                 fadeInRight"></i>
-                            </figure>CLICK HERE TO DOWNLOAD RESUME
-                        </a><br>
-                        <div class="jumbotron" style="margin: 1%;padding: 2%;">
-                            <p id="aboutdetail" style="display: inline;"><i>I am a
-                                    Full stack
-                                    developer .Currently I am Learning
-                                    Machine
-                                    learning and Deep learning from Udacity
-                                    nanodegree.Apart from
-                                    This ,I Do Compeditive Coding From
-                                    Codechef,HackerRank And GeeksForGeeks.I Also
-                                    Know Web
-                                    Scrapping,Software Testing,Object Designing.I
-                                    Also
-                                    Worked As A Campus Ambassador In
-                                    various Organisation and Currently Working as
-                                    GeeksForGeeks
-                                    Intern.</i></p>
+                        </figure>CLICK HERE TO DOWNLOAD RESUME
+                    </a><br>
+                    <div class="jumbotron m-2 p-2">
+                        <p id="aboutdetail" style="display: inline;"><i>I am a
+                                Full stack
+                                developer .Currently I am Learning
+                                Machine
+                                learning and Deep learning from Udacity
+                                nanodegree.Apart from
+                                This ,I Do Compeditive Coding From
+                                Codechef,HackerRank And GeeksForGeeks.I Also
+                                Know Web
+                                Scrapping,Software Testing,Object Designing.I
+                                Also
+                                Worked As A Campus Ambassador In
+                                various Organisation and Currently Working as
+                                GeeksForGeeks
+                                Intern.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="Education" class="my-3 py-2 " style=" background: rgba(122, 89, 38, 0.986); ">
+        <div class="container" style="background-color: white;">
+            <h2 style="background-color: rgb(236, 236, 147);">Education</h2>
+            <div class="row my-2" style="background-color:rgb(241, 248, 248);color: rgb(14, 20, 20);">
+                <div id="EduIcon" class="col-md-2">
+
+                    <div class="education-card-left">
+                        <img class="education-roundedimg" src="./img/Education/College.png" alt="IEM,Kolkata">
+                    </div>
+                </div>
+                <div class="education-card-right" class="col-md-10">
+                    <h6 class="education-text-school">Institute Of Engineering & Management</h6>
+                    <h6 class="education-text-school">Kolkata,West Bengal</h6>
+                    <div class="education-text-details">
+                        <h6 class="education-text-subHeader">B.Tech in CSE</h6>
+                        <p class=" education-text-duration">August 2018 - July 2022</p>
+
+                        <div class="education-text-bullets">
+                            <ul>
+                                <li class="subTitle">Current Semester->5th</li>
+
+                                <li class="subTitle">CGPA(2ndYear)->9.72</li>
+
+                            </ul>
                         </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row my-2" style="background-color:rgb(241, 248, 248);color: rgb(14, 20, 20);">
+                <div id="EduIcon" class="col-md-2">
+
+                    <div class="education-card-left">
+                        <img class="education-roundedimg" src="./img/Education/School2.jfif" alt="IEM,Kolkata">
+                    </div>
+                </div>
+                <div class="education-card-right" class="col-md-10">
+                    <h6 class="education-text-school">S.S.S.S.S Gurukulum</h6>
+                    <h6 class="education-text-school">Dhanbad,Jharkhand</h6>
+                    <div class="education-text-details">
+                        <h6 class="education-text-subHeader">12th Science</h6>
+                        <p class=" education-text-duration">August 2016 - July 2018</p>
+
+                        <div class="education-text-bullets">
+                            <ul>
+                                <li class="subTitle">Result->81.2%</li>
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row my-2" style="background-color:rgb(241, 248, 248);color: rgb(14, 20, 20);">
+                <div id="EduIcon" class="col-md-2">
+
+                    <div class="education-card-left">
+                        <img class="education-roundedimg" src="./img/Education/School1.jfif" alt="IEM,Kolkata">
+                    </div>
+                </div>
+                <div class="education-card-right" class="col-md-9">
+                    <h6 class="education-text-school">Don Bosco Ramkanali</h6>
+                    <h6 class="education-text-school">
+                        Nirsha,Jharkhand</h6>
+                    <div class=" education-text-details">
+                        <h6 class="education-text-subHeader">Class-6 to 10</h6>
+                        <p class=" education-text-duration">April 2012 - June 2016</p>
+
+                        <div class="education-text-bullets">
+                            <ul>
+                                <li class="subTitle">10Th CGPA->9.4</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="Skill" class="py-2 " style=" background: rgba(122, 89, 38, 0.986); ">
+
+        <div class="container" style="background-color: white;">
+            <h2 style="background-color: rgb(194, 194, 113);">Skill</h2>
+            <div class="row py-3">
+                <div class="col-md-2 m-2 col-sm-6">
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">Advance</div>
+                    </div>
+                </div>
+                <div class="col-md-3 m-2 col-sm-6"
+                    style="background-color: brown;color: white;border-radius: 10%;text-align: center;">
+                    Web Developement
+                    <ul>
+                        <li>Frontend</li>
+                        <span>HTML,CSS,Bootstrap,ReactJS</span>
+                        <li>Backend</li>
+                        <span>NodeJS,APIS</span>
+                        <li>Database</li>
+                        <span>SQL</span>
+                    </ul>
+                </div>
+                <div class="col-md-3 m-2 col-sm-6"
+                    style="background-color: rgb(238, 162, 162);color: white;border-radius: 10%;text-align: center;">
+                    Programming Language
+                    <ul>
+                        <li>Python </li>
+                        <Span>FrameWork-Flask,CV,Selenium,Tkinter</Span>
+                        <li>C/C++</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 m-2"
+                    style="background-color: rgb(73, 179, 82);color: white;border-radius: 10%;text-align: center" ;>
+                    Other
+                    <ul>
+                        <li>Git & Github</li>
+                        <li>Web Scraping And Automation</li>
+                        <li>Command Line & Bash Scripting</li>
+                        <li>Google Cloud & Firebase</li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class=" row py-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress yellow">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">Moderate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="progress yellow">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">Basic</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-    <section class="site-section bg-light" id="section-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mb-5">
-                    <div class="section-heading text-center">
-                        <h2 style="font-size:28px;color:white">
-                            Wanna <strong>Start Work</strong> With Me?
-                        </h2>
-                    </div>
-                </div>
-                <div class="col-md-7 mb-5 mb-md-0">
-                    <form action="" class="site-form">
-                        <h4 class="mb-5" style="color: white;">Get In Touch</h4>
-                        <div class="form-group">
-                            <input type="text" id="name" class="form-control
-                                    px-3 py-4" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" class="form-control
-                                    px-3 py-4" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="tel" class="form-control
-                                    px-3 py-4" placeholder="Your Phone">
-                        </div>
-                        <div class="form-group mb-5">
-                            <textarea id="msg" class="form-control px-3
-                                    py-4" cols="30" rows="10" placeholder="Write
-                                    a Message"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-primary px-4
-                                    py-3" value="Send Message" onclick="data()">
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-5 pl-md-5" style="color:wheat">
-                    <h4 class="mb-5">My Contact Details</h4>
-                    <ul class="site-contact-details">
-                        <li>
-                            <a style="font-size:25px" href="mailto:rohitgupta.dbs@gmail.com">
-                                <i class="fa fa-fw fa-envelope" style="font-size:30px;color:yellowgreen"></i>
-                                rohitgupta.dbs@gmail.com
-                            </a>
-                        </li>
-                        <li>
-
-
-                            <a href="tel:+916204780213" style="font-size:25px"><i class="fa fa-phone-square"
-                                    style="font-size:30px;color:yellowgreen"></i>+916204780213</a>
-                        </li>
-                        <li>
-                            <span class="text-uppercase" style="font-size:18px;color:wheat"><i
-                                    class="fa fa-address-card" style="font-size:30px;color:yellowgreen"></i>
-                                <cite style="font-size:18px">
-                                    206 Bus Stand,Saltlake <br>
-                                    Sector 2,KOLKATA <br>West Bengal,India
-                                </cite></span>
-                        </li>
-                    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5">
+                <div class="section-heading text-center">
+                    <h2 style="font-size:28px;color:white">
+                        Wanna <strong>Start Work</strong> With Me?
+                    </h2>
                 </div>
             </div>
+            <div class="col-md-7 mb-5 mb-md-0">
+                <form action="" class="site-form">
+                    <h4 class="mb-5" style="color: white;">Get In Touch</h4>
+                    <div class="form-group">
+                        <input type="text" id="name" class="form-control
+                                    px-3 py-4" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="form-control
+                                    px-3 py-4" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="tel" class="form-control
+                                    px-3 py-4" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group mb-5">
+                        <textarea id="msg" class="form-control px-3
+                                    py-4" cols="30" rows="10" placeholder="Write
+                                    a Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary px-4
+                                    py-3" value="Send Message" onclick="data()">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5 pl-md-5" style="color:wheat">
+                <h4 class="mb-5">My Contact Details</h4>
+                <ul class="site-contact-details">
+                    <li>
+                        <a style="font-size:25px" href="mailto:rohitgupta.dbs@gmail.com">
+                            <i class="fa fa-fw fa-envelope" style="font-size:30px;color:yellowgreen"></i>
+                            rohitgupta.dbs@gmail.com
+                        </a>
+                    </li>
+                    <li>
+
+
+                        <a href="tel:+916204780213" style="font-size:25px"><i class="fa fa-phone-square"
+                                style="font-size:30px;color:yellowgreen"></i>+916204780213</a>
+                    </li>
+                    <li>
+                        <span class="text-uppercase" style="font-size:18px;color:wheat"><i class="fa fa-address-card"
+                                style="font-size:30px;color:yellowgreen"></i>
+                            <cite style="font-size:18px">
+                                206 Bus Stand,Saltlake <br>
+                                Sector 2,KOLKATA <br>West Bengal,India
+                            </cite></span>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
     </section>
 
 
@@ -252,48 +384,6 @@
     <script src="js/script.js" type="text/javascript"></script>
 </body>
 <script type="text/javascript" src="js/materialize.min.js"></script>
-<!-- <script>
-
-    /*    $("#hidden_text ").click(function () {
-          if (document.getElementById("certhidden ").style.display == "none ") {
-            $("#certhidden ").toggle();
-            $('#hidden_text').html("Hide ")
-          }
-          else {
-            $("#certhidden ").toggle(); $('#hidden_text').html("Show more ");
-          }
-        });
-      
-      */
-
-    var count = 0;
-    function display(id, id2) {
-
-        $("#" + id).toggle();
-        count++;
-        if (count % 2 != 0) {
-            $("#" + id2).html("Hide All Certificate");
-            $("#" + id2).addClass("btn-warning");
-        }
-        else {
-            $("#" + id2).removeClass("btn-warning");
-            $("#" + id2).html("Show All Certificate");
-
-        }
-    }
-</script> -->
-<script>
-    $('.nav-item').on('click', function (e) {
-        $('.nav-item').removeClass('active rounded')
-        $(this).addClass('active rounded')
-    })
-    // if ($('.navbar-toggler')) {
-    //     $('.navbar-brand').removeClass('order-last')
-    // }
-    // $('#myTab a').on('click', function (e) {
-    //     e.preventDefault()
-    //     $(this).tab('show')
-    // })
-</script>
+<script type="text/javascript" src="js/project.js"></script>
 
 </html>
