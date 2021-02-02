@@ -2,6 +2,14 @@
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
+//Mobile Nav Screen
+$('a[href*="#"]').on("click", function (e) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500);
+    e.preventDefault(); //this is the important line.
+});
 $(document).on('scroll', function (e) {
     console.log('scrolling')
     if ($(this).scrollTop() + 100 < $('#About').offset().top) {
@@ -28,7 +36,7 @@ $(document).on('scroll', function (e) {
     }
 
 });
-
+// touchstart
 $('.nav-item').on('click', function (e) {
     $('.nav-item').removeClass('active rounded')
     $(this).addClass('active rounded')
